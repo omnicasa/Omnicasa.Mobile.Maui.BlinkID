@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-ios</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+    <WarningLevel>4</WarningLevel>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchExtraArgs>--linkskip=MicroBlink --linkskip=iOS</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Omnicasa.Mobile.Maui.BlinkID.iOS">
+      <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.iOS\bin\Debug\net8.0-ios\Omnicasa.Mobile.Maui.BlinkID.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

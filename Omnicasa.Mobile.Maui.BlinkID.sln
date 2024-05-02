@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.11
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicasa.Mobile.Maui.BlinkID", "Omnicasa.Mobile.Maui.BlinkID\Omnicasa.Mobile.Maui.BlinkID.csproj", "{773F036E-756A-44EB-B4C4-45F2E2AE257F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicasa.Mobile.Maui.BlinkID.iOS", "Omnicasa.Mobile.Maui.BlinkID.iOS\Omnicasa.Mobile.Maui.BlinkID.iOS.csproj", "{D39CD748-9A85-4D81-9100-3DCE92B02A1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{30FA194A-C992-41AE-9110-0FBB1525A485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicasa.Mobile.Maui.BlinkID.Demo.iOS", "Omnicasa.Mobile.Maui.BlinkID.Demo.iOS\Omnicasa.Mobile.Maui.BlinkID.Demo.iOS.csproj", "{F05D963E-5751-442A-808C-6628AD95E9D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{773F036E-756A-44EB-B4C4-45F2E2AE257F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773F036E-756A-44EB-B4C4-45F2E2AE257F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773F036E-756A-44EB-B4C4-45F2E2AE257F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773F036E-756A-44EB-B4C4-45F2E2AE257F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39CD748-9A85-4D81-9100-3DCE92B02A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39CD748-9A85-4D81-9100-3DCE92B02A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39CD748-9A85-4D81-9100-3DCE92B02A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39CD748-9A85-4D81-9100-3DCE92B02A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05D963E-5751-442A-808C-6628AD95E9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05D963E-5751-442A-808C-6628AD95E9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05D963E-5751-442A-808C-6628AD95E9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05D963E-5751-442A-808C-6628AD95E9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72F83383-0DB8-42A9-8969-DC7DAC051249}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F05D963E-5751-442A-808C-6628AD95E9D6} = {30FA194A-C992-41AE-9110-0FBB1525A485}
+	EndGlobalSection
+EndGlobal
