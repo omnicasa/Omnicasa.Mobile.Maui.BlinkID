@@ -37,11 +37,12 @@ namespace Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS
         }
 
         /// <inheritdoc/>
-        public IObservable<CardRecognizer?> Scan()
+        public IObservable<CardRecognizer?> Scan(int limit = -1)
         {
             UIViewController? scannerUIController = null;
+            int numberOfResult = 0;
 
-            return Observable.Create<CardRecognizer?>(o =>
+            var observable = Observable.Create<CardRecognizer?>(o =>
             {
                 try
                 {
@@ -54,16 +55,20 @@ namespace Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS
                             switch (state)
                             {
                                 case RecognizingState.DidFinishedScanning:
-                                    System.Diagnostics.Debug.WriteLine("DidFinishedScanning");
                                     o.OnNext(blinkIdMultiSideRecognizer.Result.Parse());
+                                    if (++numberOfResult == limit)
+                                    {
+                                        scannerUIController?.DismissViewController(true, null);
+                                        o.OnCompleted();
+                                    }
+
                                     break;
 
                                 case RecognizingState.DidFinishedScanningFirstSide:
-                                    System.Diagnostics.Debug.WriteLine("DidFinishedScanningFirstSide");
                                     break;
 
                                 case RecognizingState.DidTapClose:
-                                    System.Diagnostics.Debug.WriteLine("DidTapClose");
+                                    scannerUIController?.DismissViewController(true, null);
                                     o.OnCompleted();
                                     break;
 
@@ -86,10 +91,7 @@ namespace Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS
                     keyWindow!.RootViewController!.PresentViewController(
                         scannerUIController!,
                         true,
-                        () =>
-                        {
-                            o.OnCompleted();
-                        });
+                        null);
                 }
                 catch (Exception ex)
                 {
@@ -102,6 +104,8 @@ namespace Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS
                     scannerUIController = null;
                 });
             });
+
+            return observable;
         }
 
         private IMBRecognizerRunnerViewController MakeScannerViewController(

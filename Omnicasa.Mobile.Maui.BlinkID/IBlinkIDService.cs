@@ -13,8 +13,9 @@ namespace Omnicasa.Mobile.Maui.BlinkID
 
         /// <summary>
         /// Scan.
+        /// Limit = -1, scan forever.
         /// </summary>
         /// <returns>CardRecognizer.</returns>
-        IObservable<CardRecognizer?> Scan();
+        IObservable<CardRecognizer?> Scan(int limit = -1);
     }
 }

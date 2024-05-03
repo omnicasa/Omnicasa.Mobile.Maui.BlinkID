@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{30
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicasa.Mobile.Maui.BlinkID.Demo.iOS", "Omnicasa.Mobile.Maui.BlinkID.Demo.iOS\Omnicasa.Mobile.Maui.BlinkID.Demo.iOS.csproj", "{F05D963E-5751-442A-808C-6628AD95E9D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicasa.Mobile.Maui.BlinkID.Droid", "Omnicasa.Mobile.Maui.BlinkID.Droid\Omnicasa.Mobile.Maui.BlinkID.Droid.csproj", "{99F1AD39-D597-4FC5-966B-57C799D0E49D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicasa.Mobile.Maui.BlinkID.Demo.Droid", "Omnicasa.Mobile.Maui.BlinkID.Demo.Droid\Omnicasa.Mobile.Maui.BlinkID.Demo.Droid.csproj", "{A0F71845-63D0-4386-9BE5-EA0519AF675B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{F05D963E-5751-442A-808C-6628AD95E9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F05D963E-5751-442A-808C-6628AD95E9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F05D963E-5751-442A-808C-6628AD95E9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F1AD39-D597-4FC5-966B-57C799D0E49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F1AD39-D597-4FC5-966B-57C799D0E49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F1AD39-D597-4FC5-966B-57C799D0E49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F1AD39-D597-4FC5-966B-57C799D0E49D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F71845-63D0-4386-9BE5-EA0519AF675B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F71845-63D0-4386-9BE5-EA0519AF675B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F71845-63D0-4386-9BE5-EA0519AF675B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F71845-63D0-4386-9BE5-EA0519AF675B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +50,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F05D963E-5751-442A-808C-6628AD95E9D6} = {30FA194A-C992-41AE-9110-0FBB1525A485}
+		{A0F71845-63D0-4386-9BE5-EA0519AF675B} = {30FA194A-C992-41AE-9110-0FBB1525A485}
 	EndGlobalSection
 EndGlobal

@@ -3,6 +3,7 @@ using CoreGraphics;
 using Foundation;
 using Omnicasa.Mobile.Maui.BlinkID.Models;
 using Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS;
+using ReactiveUI;
 using UIKit;
 
 namespace Omnicasa.Mobile.Maui.BlinkID.Demo.iOS;
@@ -62,7 +63,8 @@ public class AppDelegate : UIApplicationDelegate
     {
         currentScanner?.Dispose();
         currentScanner = blinkIDService
-            .Scan()
+            .Scan(1)
+            .SubscribeOn(RxApp.MainThreadScheduler)
             .Catch<CardRecognizer?, Exception>(ex =>
             {
                 System.Diagnostics.Debug.WriteLine($"Scanning throw error => {ex.GetType().Name}");
