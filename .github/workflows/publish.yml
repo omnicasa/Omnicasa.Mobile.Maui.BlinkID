@@ -22,7 +22,10 @@ jobs:
         with:
           file: "Omnicasa.Mobile.Maui.BlinkID.iOS/Omnicasa.Mobile.Maui.BlinkID.iOS.csproj"
           version: ${{ env.VERSION }}
-          
+
+      - name: Install .NET MAUI
+        run: dotnet workload install maui   
+         
       # Publish
       - name: Publish on version change
         id: publish_nuget
