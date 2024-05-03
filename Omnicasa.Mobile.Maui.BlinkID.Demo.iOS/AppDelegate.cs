@@ -1,8 +1,6 @@
 ﻿using System.Reactive.Linq;
 using CoreGraphics;
 using Foundation;
-using Omnicasa.Mobile.Maui.BlinkID.Models;
-using Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS;
 using ReactiveUI;
 using UIKit;
 
@@ -15,8 +13,10 @@ public class AppDelegate : UIApplicationDelegate
     /// <inheritdoc/>
     public const string iOSLic = "sRwAAAETY29tLm9tbmljYXNhLm1vYmlsZXEPe6POZt4PSoCbv7EneOY6qMOcReFvL6VLejgXyGu/S7xlYbv6QgiyU/fYd8harXPQGCVH4xKMRD0blOjniQtx5Fv97rt7lrlNpr885nqSXcb83vXEjvxGkhLbN8VFIXCWV/GZpQonCwmVPTgs9jF9a2HX1pu3/mROCDKCQ5KiT5h8MRhMLyih2g2aXWKgtbQ0bcWU";
 
+    /*
     private IBlinkIDService blinkIDService = new BlinkIDService();
     private IDisposable? currentScanner;
+    */
 
     /// <inheritdoc/>
     public override UIWindow? Window
@@ -31,6 +31,7 @@ public class AppDelegate : UIApplicationDelegate
         // create a new window instance based on the screen size
         Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
+        /*
         blinkIDService
             .Initialize(iOSLic)
             .Catch<bool, Exception>(_ => Observable.Return(false))
@@ -38,6 +39,7 @@ public class AppDelegate : UIApplicationDelegate
             {
                 System.Diagnostics.Debug.WriteLine($"Register BLINKID with result => {initialized}");
             });
+        */
 
         // create a UIViewController with a single UILabel
         var vc = new UIViewController();
@@ -61,6 +63,7 @@ public class AppDelegate : UIApplicationDelegate
 
     private void But_TouchUpInside(object? sender, EventArgs e)
     {
+        /*
         currentScanner?.Dispose();
         currentScanner = blinkIDService
             .Scan(1)
@@ -74,5 +77,6 @@ public class AppDelegate : UIApplicationDelegate
             {
                 System.Diagnostics.Debug.WriteLine($"Card => {card?.FirstName}");
             });
+        */
     }
 }
