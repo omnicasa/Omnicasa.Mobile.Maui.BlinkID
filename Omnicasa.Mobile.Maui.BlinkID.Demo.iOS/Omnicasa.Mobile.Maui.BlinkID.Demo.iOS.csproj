@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <CreatePackage>false</CreatePackage>
@@ -16,8 +17,10 @@
     <CreatePackage>false</CreatePackage>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Omnicasa.Mobile.Maui.BlinkID.iOS">
-      <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.iOS\bin\Debug\net8.0-ios\Omnicasa.Mobile.Maui.BlinkID.iOS.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Omnicasa.Mobile.Maui.BlinkID\Omnicasa.Mobile.Maui.BlinkID.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Omnicasa.Analyzers" Version="2024.2.2.7" />
+    <PackageReference Include="System.Reactive" Version="6.0.0" />
   </ItemGroup>
 </Project>
