@@ -18,7 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Omnicasa.Mobile.Maui.BlinkID.Droid">
-      <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.Droid\bin\Debug\net8.0-android\Omnicasa.Mobile.Maui.BlinkID.Droid.dll</HintPath>
+      <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.Droid\bin\Release\net8.0-android\Omnicasa.Mobile.Maui.BlinkID.Droid.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

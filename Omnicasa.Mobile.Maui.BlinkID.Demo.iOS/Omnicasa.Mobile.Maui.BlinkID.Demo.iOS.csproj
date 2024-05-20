@@ -25,4 +25,9 @@
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PackageReference Include="Omnicasa.Mobile.Maui.BlinkID.iOS" Version="1.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Omnicasa.Mobile.Maui.BlinkID.iOS">
+      <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.iOS\bin\Release\net8.0-ios\Omnicasa.Mobile.Maui.BlinkID.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
