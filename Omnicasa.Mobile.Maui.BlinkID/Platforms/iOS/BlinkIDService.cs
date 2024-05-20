@@ -1,4 +1,5 @@
-﻿using System.Reactive.Disposables;
+﻿#if !DEBUG
+using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using Omnicasa.Mobile.Maui.BlinkID.iOS;
 using Omnicasa.Mobile.Maui.BlinkID.Models;
@@ -126,3 +127,4 @@ namespace Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS
         }
     }
 }
+#endif

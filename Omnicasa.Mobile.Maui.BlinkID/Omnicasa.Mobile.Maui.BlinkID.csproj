@@ -30,9 +30,16 @@
 	</ItemGroup>
 
 	<ItemGroup Condition=" '$(TargetFramework)' == 'net8.0-android' ">
-	  <Reference Include="Omnicasa.Mobile.Maui.BlinkID.Droid">
-	    <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.Droid\bin\Debug\net8.0-android\Omnicasa.Mobile.Maui.BlinkID.Droid.dll</HintPath>
-	  </Reference>
+		<Reference Include="Omnicasa.Mobile.Maui.BlinkID.Droid">
+			<HintPath>..\Omnicasa.Mobile.Maui.BlinkID.Droid\bin\Debug\net8.0-android\Omnicasa.Mobile.Maui.BlinkID.Droid.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AndroidResource Update="Platforms\Android\Resources\values\attrs.xml">
+	    <SubType></SubType>
+	    <Generator></Generator>
+	  </AndroidResource>
 	</ItemGroup>
 
 </Project>

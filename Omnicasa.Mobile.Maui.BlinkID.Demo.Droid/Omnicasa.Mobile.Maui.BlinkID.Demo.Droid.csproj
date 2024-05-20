@@ -9,16 +9,12 @@
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
-
-  <ItemGroup>
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.8" />
     <PackageReference Include="Xamarin.AndroidX.AppCompat.AppCompatResources" Version="1.6.1.9" />
   </ItemGroup>
+
   <ItemGroup>
-    <Reference Include="Omnicasa.Mobile.Maui.BlinkID.Droid">
-      <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.Droid\bin\Release\net8.0-android\Omnicasa.Mobile.Maui.BlinkID.Droid.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Omnicasa.Mobile.Maui.BlinkID\Omnicasa.Mobile.Maui.BlinkID.csproj" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if !DEBUG
+using System;
 using Omnicasa.Mobile.Maui.BlinkID.iOS;
 using Omnicasa.Mobile.Maui.BlinkID.Models;
 
@@ -30,3 +31,4 @@ namespace Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS
         }
     }
 }
+#endif

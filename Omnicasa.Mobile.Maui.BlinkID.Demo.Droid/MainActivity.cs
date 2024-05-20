@@ -1,4 +1,7 @@
-﻿namespace Omnicasa.Mobile.Maui.BlinkID.Demo.Droid;
+﻿using Android.App;
+using Android.OS;
+
+namespace Omnicasa.Mobile.Maui.BlinkID.Demo.Droid;
 
 [Activity(Label = "@string/app_name", MainLauncher = true)]
 public class MainActivity : Activity

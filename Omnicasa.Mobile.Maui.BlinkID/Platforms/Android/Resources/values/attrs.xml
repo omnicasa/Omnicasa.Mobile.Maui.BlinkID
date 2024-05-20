@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <declare-styleable name="GlobalAttrs">
+        <attr format="reference" name="mb_helpTooltipTextAppearance"/>
+        <attr format="color" name="mb_helpTooltipColor"/>
+        <attr format="reference" name="mb_helpTooltipBackground"/>
+
+        <attr format="color" name="mb_onboardingImageColor"/>
+        <attr format="reference" name="mb_onboardingTitleTextAppearance"/>
+        <attr format="reference" name="mb_onboardingMessageTextAppearance"/>
+        <attr format="reference" name="mb_onboardingButtonTextAppearance"/>
+        <attr format="color" name="mb_introductionImageColor"/>
+        <attr format="reference" name="mb_introductionTitleTextAppearance"/>
+        <attr format="reference" name="mb_introductionMessageTextAppearance"/>
+        <attr format="reference" name="mb_introductionButtonTextAppearance"/>
+        <attr format="color" name="mb_onboardingBackgroundColor"/>
+        <attr format="color" name="mb_onboardingPageIndicatorColor"/>
+        <attr format="color" name="mb_introductionBackgroundColor"/>
+        <attr format="reference" name="mb_introductionImage"/>
+    </declare-styleable>
+</resources>

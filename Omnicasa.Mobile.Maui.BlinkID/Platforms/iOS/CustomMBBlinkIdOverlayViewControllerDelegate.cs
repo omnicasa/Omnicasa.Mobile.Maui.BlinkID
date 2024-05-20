@@ -1,4 +1,5 @@
-﻿using Omnicasa.Mobile.Maui.BlinkID.iOS;
+﻿#if !DEBUG
+using Omnicasa.Mobile.Maui.BlinkID.iOS;
 using Omnicasa.Mobile.Maui.BlinkID.Models;
 
 #pragma warning disable SA1300
@@ -57,3 +58,4 @@ namespace Omnicasa.Mobile.Maui.BlinkID.Platforms.iOS
         }
     }
 }
+#endif
