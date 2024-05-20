@@ -2,6 +2,9 @@
 ## iOS only support for real device
 [![NuGet Badge](https://buildstats.info/nuget/Omnicasa.Mobile.Maui.BlinkID.iOS)](https://www.nuget.org/packages/Omnicasa.Mobile.Maui.BlinkID.iOS/)
 
+## Android
+[![NuGet Badge](https://buildstats.info/nuget/Omnicasa.Mobile.Maui.BlinkID.Droid)](https://www.nuget.org/packages/Omnicasa.Mobile.Maui.BlinkID.Droid/)
+
 ## Updating native binding libraries
 
 ### Android
