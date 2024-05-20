@@ -11,10 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <AndroidLibrary Update="LibBlinkID.aar" Bind="false" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.8" />
     <PackageReference Include="Xamarin.AndroidX.AppCompat.AppCompatResources" Version="1.6.1.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Omnicasa.Mobile.Maui.BlinkID.Droid">
+      <HintPath>..\Omnicasa.Mobile.Maui.BlinkID.Droid\bin\Debug\net8.0-android\Omnicasa.Mobile.Maui.BlinkID.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
