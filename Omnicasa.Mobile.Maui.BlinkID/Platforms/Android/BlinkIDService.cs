@@ -1,6 +1,7 @@
 ﻿using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using AndroidX.Activity.Result;
+using Com.Microblink;
 using Com.Microblink.Blinkid;
 using Com.Microblink.Blinkid.Intent;
 using Omnicasa.Mobile.Maui.BlinkID.Models;
