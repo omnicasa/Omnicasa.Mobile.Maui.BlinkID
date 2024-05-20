@@ -23,14 +23,14 @@ jobs:
             version-stub: '65534.65534.65534.65534'    
 
       - name: iOS Set version for project
-        id: update
+        id: updateiOS
         uses: vers-one/dotnet-project-version-updater@v1.3
         with:
           file: "Omnicasa.Mobile.Maui.BlinkID.iOS/Omnicasa.Mobile.Maui.BlinkID.iOS.csproj"
           version: ${{ env.VERSION }}
 
       - name: Droid Set version for project
-        id: update
+        id: updateDroid
         uses: vers-one/dotnet-project-version-updater@v1.3
         with:
           file: "Omnicasa.Mobile.Maui.BlinkID.Droid/Omnicasa.Mobile.Maui.BlinkID.Droid.csproj"
@@ -41,7 +41,7 @@ jobs:
          
       # Publish
       - name: iOS Publish on version change
-        id: publish_nuget
+        id: publish_nuget_iOS
         uses: linch90/publish-nuget@v1.0.2
         with:
           # Filepath of the project to be packaged, relative to root of repository
@@ -57,7 +57,7 @@ jobs:
           VERSION_STATIC: ${{env.VERSION}}
 
       - name: Droid Publish on version change
-        id: publish_nuget
+        id: publish_nuget_Droid
         uses: linch90/publish-nuget@v1.0.2
         with:
           # Filepath of the project to be packaged, relative to root of repository
